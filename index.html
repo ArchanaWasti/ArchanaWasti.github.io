@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Archana's Portfolio</title>
+    <style>
+        /* CSS styling goes here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .profile {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+
+        .portfolio-item {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .portfolio-item h3 {
+            margin: 0;
+        }
+
+        .portfolio-item p {
+            margin-bottom: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        
+    </style>
+    <script>
+        // JavaScript function to show/hide project details
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            details.classList.toggle("hidden");
+            details.classList.toggle("show");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Archana's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" onclick="toggleDetails('about')">About</a></li>
+                <li><a href="#projects" onclick="toggleDetails('projects')">Projects</a></li>
+                <li><a href="#contact" onclick="toggleDetails('contact')">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/archana-wasti-6a2114275/">LinkedIn</a> | <a href="https://github.com/ArchanaWasti">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="profile">
+        <h2>Hi, I am Archana</h2>
+        <img src="c:\Users\231ar\OneDrive\Pictures\Camera Roll\WhatsApp Image 2023-05-03 at 19.38.24.jpg" alt="Archana's Picture">
+        
+        </div>
+        
+        <p><strong>Goal:</strong> "I am passionate about leveraging data and artificial intelligence (AI) to drive meaningful insights and contribute to business success. I aim to excel in the field of data analysis, utilizing my skills in data manipulation, analysis, and visualization, along with my proficiency in programming languages like Python and SQL, statistical and visualization tools like MS Excel and Tableau, and machine learning algorithms. I strive to apply my knowledge and expertise to solve complex business problems and provide actionable recommendations that drive data-driven decision making."</p>
+    </div>
+
+    <section id="about" class="portfolio-item">
+        <h3>About Me</h3>
+        <p>Data analyst with a strong educational background in applied A.I. solutions development. Skilled in data manipulation, analysis, and visualization, using programming languages such as Python and SQL. Proficient in statistical analysis and experience in using tools like MS Excel, Tableau, and visualization libraries. Brings a solid understanding of mathematical concepts and machine learning algorithms. Adept at working with big data technologies and demonstrating strong documentation skills. Seeking a position as a data analyst.</p>
+    </section>
+
+    <section id="projects" class="portfolio-item">
+        <h3>Projects</h3>
+        <div>
+            <h4>Loan Approval Classification</h4>
+            <p>Created an advanced machine learning-based loan approval classification system by leveraging powerful algorithms including decision trees, random forests, and logistic regression.</p>
+        </div>
+        <div>
+            <h4>Movie Recommender System</h4>
+            <p>Successfully implemented a cutting-edge movie recommender system by incorporating collaborative filtering and content-based filtering algorithms.</p>
+        </div>
+        <div>
+            <h4>Prescription Parser</h4>
+            <p>Developed a prescription parser using natural language processing techniques.</p>
+        </div>
+        <div>
+            <h4>Data Visualization Project</h4>
+            <p>Employed Tableau, Python, and SQL to analyze and visualize data from multiple schools, facilitating the evaluation of student achievements and enabling informed strategies to enhance their performance and accomplishments.</p>
+        </div>
+        <div>
+            <h4>Real Fake Job Posting</h4>
+            <p>Used different deep learning and NLP techniques like word2vec, skip-gram, cbow, LSTM, and the hugging face library Roberta to predict real and fake job postings.</p>
+        </div>
+        <!-- Add more project divs as needed -->
+    </section>
+
+    <section id="contact" class="portfolio-item hidden">
+        <h3>Contact</h3>
+        <p>Scarborough, ON | (416) 452-3186 | 231archu@gmail.com</p>
+    </section>
+</body>
+</html>
